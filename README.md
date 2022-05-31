@@ -1,14 +1,19 @@
 # 2022 NOS Code Delivery to NWS/NCO
 
-This repository contains version 3.5.0 of the NOAA/National Ocean Service (NOS) Coastal and Ocean Modeling Framework (COMF) code package for delivery to the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediciton (NCEP) Central Operations (NCO) for the next production implementation.
+This repository contains version 3.5.0 of the NOAA/National Ocean Service (NOS) Coastal and Ocean Modeling Framework (COMF) code package for delivery to the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediciton (NCEP) Central Operations (NCO) for the next production implementation at NOAA’s Weather and Climate Operational Supercomputing System (WCOSS2).
 
 ## Overview
-NOS develops and operates OFSs that provide users with nowcast (analyses of near-present) and forecast guidance of water levels, currents, salinity and water
-temperature out to a minimum of 120 hours, four times per day. 
+The National Ocean Service (NOS) develops and operates Operational Forecast Systems (OFS) that provide users with nowcast (analyses of near-present) and forecast
+guidance of water levels, currents, salinity and water temperature out to a minimum of 120 hours, four times per day. The OFS are operated under a standardized Coastal Ocean Modeling Framework (COMF) at NOAA’s WCOSS.
 
-OFS are implemented in critical ports, harbors, estuaries, Great Lakes and coastal waters of the United States, and will join the NOS' operational oceanographic
-capabilities to form a national backbone of real-time data, tidal predictions, data management and operational modeling. Currently, NOS operates a network of 15 OFS
-located along the coastal United States. 
+OFSs are implemented in critical ports, harbors, estuaries, Great Lakes and coastal waters of the United States, and will join the NOS' operational
+oceanographic capabilities to form a national backbone of real-time data, tidal predictions, data management and operational modeling. Currently, NOS operates a
+network of 15 OFS located along the coastal United States, including:
+* Alaska (Cook Inlet)
+* West Coast (Columbia River, San Francisco Bay, West Coast)
+* East Coast (St. Jonhs River, Chesapeake Bay, Delaware Bay, New York, Gulf of Maine)
+* Gulf of Mexico (Tampa Bay and Northern Gulf of Mexico)
+* Great Lakes (Lake Erie, Lake Michigan-Huron, Lake Ontario, Lake Superior)
 
 ## NOAA Open Source Disclaimer
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of
