@@ -1,6 +1,6 @@
 # 2022 NOS Code Delivery to NWS/NCO
 
-This repository contains version 3.5.0 of the National Ocean Service (NOS) Coastal and Ocean Modeling Framework (COMF) code package for delivery to NOAA/NWS/NCEP Central Operations (NCO) by the end of June 2022 for the next production implementation.
+This repository contains version 3.5.0 of the NOAA/National Ocean Service (NOS) Coastal and Ocean Modeling Framework (COMF) code package for delivery to the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediciton (NCEP) Central Operations (NCO) for the next production implementation.
 
 ## Overview
 NOS develops and operates OFSs that provide users with nowcast (analyses of near-present) and forecast guidance of water levels, currents, salinity and water
