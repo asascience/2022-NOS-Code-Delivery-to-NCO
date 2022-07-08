@@ -1,0 +1,132 @@
+ &NML_RIVER
+ RIVER_NAME      = '0421964005'                                                                  ,
+ RIVER_FILE      = 'RIVER/1586.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        1586,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '0421964005'                                                                  ,
+ RIVER_FILE      = 'RIVER/1588.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        1588,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '0421964005'                                                                  ,
+ RIVER_FILE      = 'RIVER/1589.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        1589,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '0421964005'                                                                  ,
+ RIVER_FILE      = 'RIVER/1591.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        1591,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04231600'                                                                 ,
+ RIVER_FILE      = 'RIVER/19606.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       19606,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04249000'                                                                  ,
+ RIVER_FILE      = 'RIVER/37420.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       37420,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260500'                                                                    ,
+ RIVER_FILE      = 'RIVER/1403.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        1403,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04250200'                                                                  ,
+ RIVER_FILE      = 'RIVER/26075.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       26075,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                               ,
+ RIVER_FILE      = 'RIVER/28863.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       28863,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                               ,
+ RIVER_FILE      = 'RIVER/28862.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       28862,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                               ,
+ RIVER_FILE      = 'RIVER/28861.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       28861,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/39695.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       39695,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/40323.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       40323,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/40925.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       40925,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/41493.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       41493,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/41495.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       41495,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/42033.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       42033,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/42035.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       42035,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/42547.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       42547,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '04260901'                                                              ,
+ RIVER_FILE      = 'RIVER/42550.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =       42550,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '02HC003'                                                                   ,
+ RIVER_FILE      = 'RIVER/3844.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        3844,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
+ &NML_RIVER
+ RIVER_NAME      = '02HC024'                                                                      ,
+ RIVER_FILE      = 'RIVER/7120.nc'                                                                 ,
+ RIVER_GRID_LOCATION     =        7120,
+ RIVER_VERTICAL_DISTRIBUTION     = unifor                                     
+ /
