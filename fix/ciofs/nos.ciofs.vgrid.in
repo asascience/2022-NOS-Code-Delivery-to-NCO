@@ -1,0 +1,14 @@
+!NUMBER OF SIGMA LEVELS = 30
+KB = 30
+! Set vertical, terrain-following coordinates transformation equation and
+! stretching function (see below for details), [1:Ngrids].
+
+Vtransform = 1                          ! transformation equation
+Vstretching = 1                          ! stretching function
+
+! Vertical S-coordinates parameters (see below for details), [1:Ngrids].
+
+!SIGMA COORDINATE TYPE = UNIFORM
+THETA_S = 4.5
+THETA_B = 0.91
+TCLINE = 10.0
