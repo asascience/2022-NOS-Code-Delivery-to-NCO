@@ -2,7 +2,7 @@
 
 This repository contains version 3.5.0 of the NOAA/National Ocean Service (NOS) Coastal and Ocean Modeling Framework (COMF) code package for delivery to the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediciton (NCEP) Central Operations (NCO) for the next production implementation at NOAA’s Weather and Climate Operational Supercomputing System (WCOSS2).
 
-NOTE: Due to file size limitations on GitHub, the fix directory was not uploaded.  See the nosofs.v3.5.0 release notes for instructions on where to find the fix direcotry.
+NOTE: Due to file size limitations on GitHub, the fix directory was not uploaded.  Refer to the Implementation Instructions Section in the nosofs.v3.5.0 Release Notes for the location of the fix directory.
 
 ## Overview
 The National Ocean Service (NOS) develops and operates Operational Forecast Systems (OFS) that provide users with nowcast (analyses of near-present) and forecast
