@@ -180,18 +180,14 @@ dashL= $(empty) -L
 #
 #--------------------------------------------------------------------------
 
-#              FLAG_6 = -DPROJ
-#              PLIB1=-L./libs/proj.4-master/lib  -lproj -lm
-#              PLIB2=-L./libs/proj4-fortran-master/lib  -lfproj4 -lm
-#              PROJLIBS=$(PLIB1) $(PLIB2)
+              FLAG_6 = -DPROJ
+              PLIB1=-L./libs/proj.4-master/lib  -lproj -lm
+              PLIB2=-L./libs/proj4-fortran-master/lib  -lfproj4 -lm
+              PROJLIBS=$(PLIB1) $(PLIB2)
 
-
-#              PINC1=-I./libs/proj.4-master/include
-#              PINC2=-I./libs/proj4-fortran-master/include
-#              PROJINCS=$(PINC1) $(PINC2)
-#
-#             PROJLIBS       = -lfproj4 -lproj -lm
-#             PROJINCS       =
+              PINC1=-I./libs/proj.4-master/include
+              PINC2=-I./libs/proj4-fortran-master/include
+              PROJINCS=$(PINC1) $(PINC2)
 
 #--------------------------------------------------------------------------
 #        DATA_ASSIMILATION  INCLUDE NUDGING BASED DATA ASSIMILATION FOR
