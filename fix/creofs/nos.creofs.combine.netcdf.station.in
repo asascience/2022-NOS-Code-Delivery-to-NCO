@@ -1,6 +1,0 @@
-NSTATION   !total station number in station output file 
-NVAR   !total variable number in the station output file
-NVRT   !total vertical layers 
-NTIME  ! total time steps saved in station output file
-STA_CTLFILE 
-BASE_DATE !base_date for CREOFS 04/01/2007 00:00:00 UTC
