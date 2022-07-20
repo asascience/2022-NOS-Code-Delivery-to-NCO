@@ -1,0 +1,243 @@
+GFORTRAN module version '0' created from Hydro/sflux_9c.F90 on Mon Jun  1 13:50:36 2015
+MD5:99f37f25987210b1abd27610d692e7ba -- If you edit this, you'll get what you deserve.
+
+(() () () ()
+() () () () () () () () () () () () () () () () () () () () () () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 '__convert_r4_r8' '(intrinsic)' '__convert_r4_r8' 1 ((PROCEDURE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN FUNCTION ELEMENTAL PURE) (
+REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+3 'air_1_fail_if_missing' 'netcdf_io' 'air_1_fail_if_missing' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+4 'air_1_file' 'netcdf_io' 'air_1_file' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+5 'air_1_max_window_hours' 'netcdf_io' 'air_1_max_window_hours' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+6 'air_1_relative_weight' 'netcdf_io' 'air_1_relative_weight' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+7 'air_2_fail_if_missing' 'netcdf_io' 'air_2_fail_if_missing' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+8 'air_2_file' 'netcdf_io' 'air_2_file' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+9 'air_2_max_window_hours' 'netcdf_io' 'air_2_max_window_hours' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+10 'air_2_relative_weight' 'netcdf_io' 'air_2_relative_weight' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+11 'dataset_info' 'netcdf_io' 'dataset_info' 1 ((DERIVED UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOC_COMP) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0
+() () 0 ((12 'name' (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '50'))) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) UNKNOWN-ACCESS ()) (13 'exist' (LOGICAL 4 0 0 LOGICAL ()) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS (
+CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 0)) (14 'num_files' (INTEGER 4 0 0
+INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0')) (15 'nx' (
+INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0'))
+(16 'ny' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '0')) (17 'num_nodes' (INTEGER 4 0 0 INTEGER ()) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0')) (18 'num_elems' (INTEGER 4 0
+0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0')) (19 'lon' (
+REAL 8 0 0 REAL ()) (2 DEFERRED () () () ()) (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) UNKNOWN-ACCESS ()) (
+20 'lat' (REAL 8 0 0 REAL ()) (2 DEFERRED () () () ()) (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION)
+UNKNOWN-ACCESS ()) (21 'weight' (REAL 8 0 0 REAL ()) (2 DEFERRED () () ()
+()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE
+DIMENSION) UNKNOWN-ACCESS ()) (22 'node_i' (INTEGER 4 0 0 INTEGER ()) (
+1 DEFERRED () ()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN ALLOCATABLE DIMENSION) UNKNOWN-ACCESS ()) (23 'node_j' (INTEGER
+4 0 0 INTEGER ()) (1 DEFERRED () ()) (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) UNKNOWN-ACCESS ()) (
+24 'node_num' (INTEGER 4 0 0 INTEGER ()) (2 DEFERRED () () () ()) (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE
+DIMENSION) UNKNOWN-ACCESS ()) (25 'elem_nodes' (INTEGER 4 0 0 INTEGER ())
+(2 DEFERRED () () () ()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN ALLOCATABLE DIMENSION) UNKNOWN-ACCESS ()) (26
+'in_elem_for_out_node' (INTEGER 4 0 0 INTEGER ()) (1 DEFERRED () ()) (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE
+DIMENSION) UNKNOWN-ACCESS ()) (27 'num_times' (INTEGER 4 0 0 INTEGER ())
+() (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0')) (28 'times'
+(REAL 8 0 0 REAL ()) (1 EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0
+'1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '10000')) (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION) UNKNOWN-ACCESS ())
+(29 'file_num_for_time' (INTEGER 4 0 0 INTEGER ()) (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '10000')) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION) UNKNOWN-ACCESS ()) (30 'time_num_for_time' (INTEGER 4
+0 0 INTEGER ()) (1 EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1')
+(CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '10000')) (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION) UNKNOWN-ACCESS ())
+(31 'jdate_for_file' (INTEGER 4 0 0 INTEGER ()) (1 EXPLICIT (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0
+'1')) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION)
+UNKNOWN-ACCESS ()) (32 'max_window_hours' (REAL 8 0 0 REAL ()) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())
+(33 'relative_weight' (REAL 8 0 0 REAL ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (34 'fail_if_missing' (
+LOGICAL 4 0 0 LOGICAL ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())) PUBLIC (() ()) () 0 0)
+35 'dlwrf_name' 'netcdf_io' 'dlwrf_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+36 'dswrf_name' 'netcdf_io' 'dswrf_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+37 'elfe_glbl' 'elfe_glbl' 'elfe_glbl' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ()
+() () 0 0)
+38 'max_files' 'netcdf_io' 'max_files' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () 0 () () () 0 0)
+39 'max_times' 'netcdf_io' 'max_times' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '10000') () 0 () () () 0 0)
+40 'netcdf_io' 'netcdf_io' 'netcdf_io' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ()
+() () 0 0)
+41 'prate_name' 'netcdf_io' 'prate_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+42 'prc_1_fail_if_missing' 'netcdf_io' 'prc_1_fail_if_missing' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+43 'prc_1_file' 'netcdf_io' 'prc_1_file' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+44 'prc_1_max_window_hours' 'netcdf_io' 'prc_1_max_window_hours' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+45 'prc_1_relative_weight' 'netcdf_io' 'prc_1_relative_weight' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+46 'prc_2_fail_if_missing' 'netcdf_io' 'prc_2_fail_if_missing' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+47 'prc_2_file' 'netcdf_io' 'prc_2_file' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+48 'prc_2_max_window_hours' 'netcdf_io' 'prc_2_max_window_hours' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+49 'prc_2_relative_weight' 'netcdf_io' 'prc_2_relative_weight' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+50 'prmsl_name' 'netcdf_io' 'prmsl_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+51 'rad_1_fail_if_missing' 'netcdf_io' 'rad_1_fail_if_missing' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+52 'rad_1_file' 'netcdf_io' 'rad_1_file' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+53 'rad_1_max_window_hours' 'netcdf_io' 'rad_1_max_window_hours' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+54 'rad_1_relative_weight' 'netcdf_io' 'rad_1_relative_weight' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+55 'rad_2_fail_if_missing' 'netcdf_io' 'rad_2_fail_if_missing' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+56 'rad_2_file' 'netcdf_io' 'rad_2_file' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+57 'rad_2_max_window_hours' 'netcdf_io' 'rad_2_max_window_hours' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+58 'rad_2_relative_weight' 'netcdf_io' 'rad_2_relative_weight' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+59 'rkind' 'elfe_glbl' 'rkind' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '8') () 0 () () () 0 0)
+60 'sflux_inputs' 'netcdf_io' 'sflux_inputs' 1 ((NAMELIST UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ()
+() (61 62 63 64 65 6 10 5 9 3 7 4 8 66 67 50 68 69 54 58 53 57 51 55 52
+56 35 36 45 49 44 48 42 46 43 47 41) 0 0)
+69 'spfh_name' 'netcdf_io' 'spfh_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+63 'start_day' 'netcdf_io' 'start_day' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (INTEGER 4 0 0 INTEGER ())
+0 0 () () 0 () () () 0 0)
+70 'start_frac_jdate' 'netcdf_io' 'start_frac_jdate' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (REAL 8 0 0 REAL ())
+0 0 () () 0 () () () 0 0)
+64 'start_hour' 'netcdf_io' 'start_hour' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (REAL 8 0 0 REAL ()) 0 0
+() () 0 () () () 0 0)
+71 'start_jdate' 'netcdf_io' 'start_jdate' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 ()
+() () 0 0)
+62 'start_month' 'netcdf_io' 'start_month' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (INTEGER 4 0 0 INTEGER ())
+0 0 () () 0 () () () 0 0)
+61 'start_year' 'netcdf_io' 'start_year' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (INTEGER 4 0 0 INTEGER ())
+0 0 () () 0 () () () 0 0)
+68 'stmp_name' 'netcdf_io' 'stmp_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+65 'utc_start' 'netcdf_io' 'utc_start' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (REAL 8 0 0 REAL ()) 0 0
+() () 0 () () () 0 0)
+66 'uwind_name' 'netcdf_io' 'uwind_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+67 'vwind_name' 'netcdf_io' 'vwind_name' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE IN_NAMELIST) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 ()
+() () 0 0)
+)
+
+('__convert_r4_r8' 0 2 'air_1_fail_if_missing' 0 3 'air_1_file' 0 4
+'air_1_max_window_hours' 0 5 'air_1_relative_weight' 0 6
+'air_2_fail_if_missing' 0 7 'air_2_file' 0 8 'air_2_max_window_hours' 0
+9 'air_2_relative_weight' 0 10 'dataset_info' 0 11 'dlwrf_name' 0 35
+'dswrf_name' 0 36 'elfe_glbl' 0 37 'max_files' 0 38 'max_times' 0 39
+'netcdf_io' 0 40 'prate_name' 0 41 'prc_1_fail_if_missing' 0 42
+'prc_1_file' 0 43 'prc_1_max_window_hours' 0 44 'prc_1_relative_weight'
+0 45 'prc_2_fail_if_missing' 0 46 'prc_2_file' 0 47
+'prc_2_max_window_hours' 0 48 'prc_2_relative_weight' 0 49 'prmsl_name'
+0 50 'rad_1_fail_if_missing' 0 51 'rad_1_file' 0 52
+'rad_1_max_window_hours' 0 53 'rad_1_relative_weight' 0 54
+'rad_2_fail_if_missing' 0 55 'rad_2_file' 0 56 'rad_2_max_window_hours'
+0 57 'rad_2_relative_weight' 0 58 'rkind' 0 59 'sflux_inputs' 0 60
+'spfh_name' 0 69 'start_day' 0 63 'start_frac_jdate' 0 70 'start_hour' 0
+64 'start_jdate' 0 71 'start_month' 0 62 'start_year' 0 61 'stmp_name' 0
+68 'utc_start' 0 65 'uwind_name' 0 66 'vwind_name' 0 67)
