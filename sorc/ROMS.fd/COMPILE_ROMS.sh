@@ -1,7 +1,7 @@
 #!/bin/sh
-HOMEnos=/lfs/h1/nos/nosofs/noscrub/$LOGNAME/packages/nosofs.v3.6.0
-cd ..
-#HOMEnos=`pwd`
+#HOMEnos=/lfs/h1/nos/nosofs/noscrub/$LOGNAME/packages/nosofs.v3.6.0
+cd ../..
+HOMEnos=`pwd`
 
 BUILD_VERSION_FILE=$HOMEnos/versions/build.ver
 if [ -f $BUILD_VERSION_FILE ]; then
@@ -56,6 +56,8 @@ export LIBnos=$HOMEnos/lib
 cd $SORCnos/ROMS.fd
 gmake clean
 ./build_cbofs.sh
+
+exit
 
 #  Compile ocean model of ROMS for DBOFS
 cd $SORCnos/ROMS.fd
