@@ -237,6 +237,7 @@ if [ -s  wcofs_free_roms_mpi ]; then
 else
   echo 'roms executable for WCOFS_FREE is not created'
 fi
+
 # Compile WCOFS_DA
 cd $SORCnos/ROMS.fd/Lib/ARPACK
 gmake clean
