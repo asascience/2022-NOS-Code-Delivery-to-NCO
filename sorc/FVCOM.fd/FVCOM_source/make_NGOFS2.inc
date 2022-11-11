@@ -535,8 +535,8 @@ dashL= $(empty) -L
           CPPFLAGS = $(DEF_FLAGS) 
           COMPILER = 
           FIXEDFLAGS = -nofree
-          FC       = $(COMP_F_MPI)
-          CC       = $(COMP_MPCC)
+          FC       = $(COMP_F_MPI) -fc=ifort
+          CC       = $(COMP_MPCC) -cc=icc
           CPP      = $(COMP_CPP)
           CXX      = $(COMP_CC)
 # NGOFS2 has to use strict, "precision" caused NaN 	  

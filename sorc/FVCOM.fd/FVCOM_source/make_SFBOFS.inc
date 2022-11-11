@@ -594,8 +594,8 @@ dashL= $(empty) -L
           CPPFLAGS = $(DEF_FLAGS) 
           COMPILER = 
           FIXEDFLAGS = -nofree	  
-          FC       = $(COMP_F_MPI)
-          CC       = $(COMP_MPCC)
+          FC       = $(COMP_F_MPI) -fc=ifort
+          CC       = $(COMP_MPCC) -cc=icc
           CPP      = $(COMP_CPP)
           CXX      = $(COMP_CC)
           OPT      = -O3 -fp-model precise -ftz -fast-transcendentals -no-prec-div -no-prec-sqrt
