@@ -7,6 +7,8 @@ HOMEnos=$(dirname $PWD)
 export HOMEnos=${HOMEnos:-${NWROOT:?}/nosofs.${nosofs_ver:?}}
 
 module purge
+. /save/environments/spack/share/spack/setup-env.sh
+
 module use $HOMEnos/modulefiles
 module load intel_skylake_512
 
@@ -154,6 +156,8 @@ rm -f *.o
 cd $SORCnos/FVCOM.fd/FVCOM_source
 
 models='leofs lmhofs loofs lsofs ngofs2 sfbofs'
+
+models="leofs"
 
 for model in $models
 do

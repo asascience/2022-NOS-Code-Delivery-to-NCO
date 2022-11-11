@@ -168,7 +168,7 @@ export         which_MPI=mpich2        # compile with MPICH2 library
 
 #export        USE_OpenMP=on            # shared-memory parallelism
 
- export              FORT=ftn-intel
+ export              FORT=ifort-intel
 #export              FORT=gfortran
 #export              FORT=pgi
 

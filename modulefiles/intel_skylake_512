@@ -20,8 +20,7 @@ setenv COMP_F_MPI mpif90
 setenv COMP_ICC icc
 setenv COMP_CC  icc
 setenv COMP_CPP cpp
-setenv COMP_MPCC mpicc
-
+setenv COMP_MPCC mpicc -fc=icc
 
 module purge
 module use -a /mnt/efs/fs1/save/environments/spack/share/spack/modules/linux-centos7-skylake_avx512
