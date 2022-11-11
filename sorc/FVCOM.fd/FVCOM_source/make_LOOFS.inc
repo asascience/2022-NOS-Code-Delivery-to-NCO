@@ -557,6 +557,17 @@ dashL= $(empty) -L
 #         VISOPT   = -Wl,--export-dynamic
 #         LDFLAGS  =  $(VISITLIBPATH)
 #--------------------------------------------------------------------------
+#  Intel OneAPI/MPI Compiler Definitions
+#--------------------------------------------------------------------------
+          CPPFLAGS = $(DEF_FLAGS)
+          COMPILER =
+          FIXEDFLAGS = -nofree
+          FC       = $(COMP_F_MPI) -fc=ifort
+          CC       = $(COMP_MPCC) -cc=icc
+          CPP      = $(COMP_CPP)
+          CXX      = $(COMP_CC)
+          OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div
+#--------------------------------------------------------------------------
 #  gfortran defs 
 #--------------------------------------------------------------------------
 #         CPP      = /usr/bin/cpp 
@@ -585,13 +596,17 @@ dashL= $(empty) -L
 #--------------------------------------------------------------------------
 #  IBM/AIX Definitionss NOAA CCS (stratus and cirrus)
 #--------------------------------------------------------------------------
-          CPPFLAGS = $(DEF_FLAGS) -DAIX
-          COMPILER = -DIFORT
-          FC       = $(COMP_F_MPI) -fc=ifort
-          CC       = $(COMP_MPCC) -cc=icc
-          CPP      = $(COMP_CPP)
-          CXX      = $(COMP_CC)
-          OPT      = -O3 -fp-model precise 
+#          CPPFLAGS = $(DEF_FLAGS) -DAIX
+#          COMPILER = -DIFORT
+
+#          CPPFLAGS = $(DEF_FLAGS)
+#          COMPILER = 
+#          FC       = $(COMP_F_MPI)
+#          CC       = $(COMP_MPCC)
+#          CPP      = $(COMP_CPP)
+#          CXX      = $(COMP_CC)
+#          OPT      = -O3 -fp-model precise 
+
 #          CC       = /usr/bin/mpcc
 #          CPP      = /usr/bin/cpp
 #          FC       = $(COMP_F_MPI)

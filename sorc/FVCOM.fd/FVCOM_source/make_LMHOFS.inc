@@ -562,6 +562,17 @@ dashL= $(empty) -L
 #         VISOPT   = -Wl,--export-dynamic
 #         LDFLAGS  =  $(VISITLIBPATH)
 #--------------------------------------------------------------------------
+#  Intel OneAPI/MPI Compiler Definitions
+#--------------------------------------------------------------------------
+          CPPFLAGS = $(DEF_FLAGS)
+          COMPILER =
+          FIXEDFLAGS = -nofree
+          FC       = $(COMP_F_MPI) -fc=ifort
+          CC       = $(COMP_MPCC) -cc=icc
+          CPP      = $(COMP_CPP)
+          CXX      = $(COMP_CC)
+          OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div
+#--------------------------------------------------------------------------
 #  gfortran defs 
 #--------------------------------------------------------------------------
 #         CPP      = /usr/bin/cpp 
@@ -592,14 +603,16 @@ dashL= $(empty) -L
 #--------------------------------------------------------------------------
 #          CPPFLAGS = $(DEF_FLAGS) -DAIX
 #          COMPILER = -DIFORT
-          CPPFLAGS = $(DEF_FLAGS) 
-          COMPILER = 
-          FIXEDFLAGS = -nofree	  
-          FC       = $(COMP_F_MPI) -fc=ifort
-          CC       = $(COMP_MPCC) -cc=icc
-          CPP      = $(COMP_CPP)
-          CXX      = $(COMP_CC)
-          OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div
+
+#          CPPFLAGS = $(DEF_FLAGS) 
+#          COMPILER = 
+#          FIXEDFLAGS = -nofree	  
+#          FC       = $(COMP_F_MPI)
+#          CC       = $(COMP_MPCC)
+#          CPP      = $(COMP_CPP)
+#          CXX      = $(COMP_CC)
+#          OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div
+
 #	  OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div -no-prec-sqrt -align array64byte
 #          OPT      = -O3 -fp-model precise -ftz -fast-transcendentals -no-prec-div -no-prec-sqrt 
 #          OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div #good
