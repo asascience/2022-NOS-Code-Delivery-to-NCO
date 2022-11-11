@@ -36,7 +36,7 @@
 #
 # First the defaults
 #
-               FC := mpif90
+               FC := ftn
            FFLAGS := -fp-model precise
 #           FFLAGS += -heap-arrays
        FIXEDFLAGS := -nofree
@@ -188,13 +188,6 @@ ifdef USE_NETCDF4
     NETCDF_INCDIR ?= $(shell $(NF_CONFIG) --prefix)/include
              LIBS += $(shell $(NF_CONFIG) --flibs)
            INCDIR += $(NETCDF_INCDIR) $(INCDIR)
-
-
-        NC_CONFIG ?= nc-config
-  NETCDF_C_INCDIR ?= $(shell $(NC_CONFIG) --prefix)/include
-             LIBS += $(shell $(NC_CONFIG) --libs)
-           INCDIR += $(NETCDF_C_INCDIR) $(INCDIR)
-    
 else
     NETCDF_INCDIR ?= /opt/cray/pe/netcdf/default/intel/16.0/include
     NETCDF_LIBDIR ?= /opt/cray/pe/netcdf/default/intel/16.0/lib
@@ -250,7 +243,7 @@ endif
 
 # Use full path of compiler.
 
-               FC := $(shell which ${FC})  -fc=ifort
+               FC := $(shell which ${FC})
                LD := $(FC)
 
 #--------------------------------------------------------------------------
