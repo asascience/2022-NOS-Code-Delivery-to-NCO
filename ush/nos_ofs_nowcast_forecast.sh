@@ -82,14 +82,28 @@ echo "Starting nos_ofs_nowcast_forecast.sh at : `date`"
 
 RUNTYPE=$1 
 RUN=$OFS 
+time_hotstart=${PDY}${cycle}
+
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+echo ""
+echo "time_hotstart is $time_hotstart"
+echo ""
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+echo "************************************************"
+
 if [ -s $COMOUT/time_hotstart.${cycle} ]; then
   read time_hotstart < $COMOUT/time_hotstart.${cycle}
   export time_hotstart
 else
-  echo "time_hotstart is not defined yet"
-  echo "FATAL ERROR "
-  echo "Please define time_hotstart "
-  exit
+  export time_hotstart 
 fi
 
 if [ ${OCEAN_MODEL} == "FVCOM" -o ${OCEAN_MODEL} == "fvcom" ]
@@ -1229,7 +1243,11 @@ then
 fi
 
 
+###############################################################################
+###############################################################################
 #### FORECAST
+###############################################################################
+###############################################################################
  
 if [ $RUNTYPE == "FORECAST" -o $RUNTYPE == "forecast" ]
 then
@@ -1570,15 +1588,17 @@ then
     fi
   fi 
 
-  ######## FORECAST #########
-  ##########################
+  ######## ROMS FORECAST #########
+  ################################
 # --------------------------------------------------------------------------- #
 # 2   Execute ocean model of ROMS; where ${RUN}_roms_forecast.in is created by nos_ofs_reformat_roms_ctl.sh
   if [ ${OCEAN_MODEL} == "ROMS" -o ${OCEAN_MODEL} == "roms" ]; then
 #     mpirun $EXECnos/${RUN}_roms_mpi ./${RUN}_${OCEAN_MODEL}_forecast.in >> ${MODEL_LOG_FORECAST}
 #     mpiexec -n ${TOTAL_TASKS} $EXECnos/${RUN}_roms_mpi ./${RUN}_${OCEAN_MODEL}_forecast.in >> ${MODEL_LOG_FORECAST}
 
-      ${MPIEXEC} ${MPIOPTS} $EXECnos/${RUN}_roms_mpi ./${RUN}_${OCEAN_MODEL}_forecast.in >> ${MODEL_LOG_FORECAST}
+      ${MPIEXEC} ${MPIOPTS} $EXECnos/${RUN}_roms_mpi \
+          ./${RUN}_${OCEAN_MODEL}_forecast.in >> ${MODEL_LOG_FORECAST}
+
     export err=$?
     if [ $err -ne 0 ]
     then
@@ -1648,13 +1668,28 @@ then
     if [ $NFILE -gt 0 ]; then
       $USHnos/nos_ofs_rename.sh $OFS $OCEAN_MODEL $RUNTYPE 2d "$time_nowcastend" "$time_nowcastend"
     fi
+
+
+  ########################
+  #### FVCOM Forecast ####
+  ########################
+
   elif [ ${OCEAN_MODEL} == "FVCOM" -o ${OCEAN_MODEL} == "fvcom" ]
   then
     rm -f $MODEL_LOG_FORECAST
 #    mpirun $EXECnos/fvcom_${RUN} --casename=$RUN > $MODEL_LOG_FORECAST
 #    mpiexec -n ${TOTAL_TASKS} $EXECnos/fvcom_${RUN} --casename=$RUN > $MODEL_LOG_FORECAST
 
+    echo "***********************************************************"
+    echo "***********************************************************"
+    echo ""
+    echo ""
     $MPIEXEC $MPIOPTS $EXECnos/fvcom_${RUN} --casename=$RUN > $MODEL_LOG_FORECAST
+    echo ""
+    echo ""
+    echo "***********************************************************"
+    echo "***********************************************************"
+
     export err=$?
     if [ $err -ne 0 ]
     then
