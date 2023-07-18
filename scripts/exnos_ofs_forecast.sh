@@ -45,9 +45,11 @@ fi
 #PT - Removed nos_ofs_nowcast_forecast.sh $runtype  - section
 #PT - Removed nos_ofs_archive.sh $runtype - section
 
+# 2nd parameter only matters if == "prep"
 echo "run the launch script to set the NOS configuration"
-. $USHnos/nos_ofs_launch.sh $OFS forecast_this-paramater-ignored-unless-prep
-export pgm="$USHnos/nos_ofs_launch.sh $OFS ifnotprep-couldbeanything-else"
+export pgm="$USHnos/nos_ofs_launch.sh $OFS foreacst"
+. $USHnos/nos_ofs_launch.sh $OFS forecast
+
 export err=$?
 if [ $err -ne 0 ]
 then

@@ -33,6 +33,13 @@ cd $SORCnos
 buildprep=no
 
 models='cbofs ciofs dbofs gomofs tbofs wcofs wcofs_free'
+#models=''
+
+
+# Needed in post
+cd $SORCnos/nos_ofs_rename.fd
+rm -f *.o *.a
+gmake -f makefile
 
 for model in $models
 do
@@ -126,11 +133,6 @@ if [[ $buildprep == "yes" ]] ; then
   # Not sure if this is ROMS related or not
   cd $SORCnos/nos_ofs_adjust_tides.fd
   gmake clean
-  gmake -f makefile
-
-
-  cd $SORCnos/nos_ofs_rename.fd
-  rm -f *.o *.a
   gmake -f makefile
 
 fi  # end if buildprep
