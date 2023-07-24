@@ -48,6 +48,7 @@ export I_MPI_DEBUG=1
 #export FI_PROVIDER=tcp
 
 export OFS=${OFS:-cbofs}
+export PREFIXNOS="nos.$OFS"
 
 NOWCAST=${NOWCAST:-NO}      # Run the nowcast?
 FORECAST=${FORECAST:-YES}    # Run the forecast?
@@ -61,7 +62,7 @@ export SENDDBN=NO
 
 export MPIEXEC=mpirun
 
-if [[ "$OFS" == "ngofs" || "$OFS" == "nwgofs" ]] ; then
+if [[ "$OFS" == "ngofs2" ]] ; then
   export MPIOPTS=${MPIOPTS:-"-np $NPP -ppn $PPN -bind-to core"}
 fi
 
@@ -72,7 +73,7 @@ FORECAST=YES    # Run the forecast?
 
 export cyc=${HH}
 export cycle=$cyc
-export nosofs_ver=v3.2.1
+export nosofs_ver=v3.5.4
 export NWROOT=/save
 export COMROOT=/com
 export jobid=fcst.$$
@@ -97,7 +98,6 @@ export jlogfile=$DATA/jlogfile.$$
 ###################################
 # Specify NET and RUN Name and model
 ####################################
-export OFS=${OFS:-ngofs}
 export NET=${NET:-nos}
 export RUN=${RUN:-$OFS}
 
@@ -140,6 +140,9 @@ export HOMEnos=${HOMEnos:-${NWROOT:?}/nosofs.${nosofs_ver:?}}
 export EXECnos=${EXECnos:-${HOMEnos}/exec}
 export FIXnos=${FIXnos:-${HOMEnos}/fix/shared}
 export FIXofs=${FIXofs:-${HOMEnos}/fix/${OFS}}
+
+#export FIXofs="/save/ioos/patrick.tripp/nosofs-NCO/fix/$OFS"
+
 export PARMnos=${PARMnos:-${HOMEnos}/parm}
 export USHnos=${USHnos:-${HOMEnos}/ush}
 export SCRIPTSnos=${SCRIPTSnos:-${HOMEnos}/scripts}
