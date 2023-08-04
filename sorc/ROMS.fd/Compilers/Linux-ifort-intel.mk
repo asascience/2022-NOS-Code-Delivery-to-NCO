@@ -37,7 +37,8 @@
 # First the defaults
 #
                FC := mpif90
-           FFLAGS := -fp-model precise
+           # FFLAGS := -march=core-avx2 -fp-model precise
+           FFLAGS :=  -fp-model precise
 #           FFLAGS += -heap-arrays
        FIXEDFLAGS := -nofree
         FREEFLAGS := -free
