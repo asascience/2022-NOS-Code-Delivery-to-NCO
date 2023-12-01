@@ -39,7 +39,8 @@ module purge
 export I_MPI_OFI_LIBRARY_INTERNAL=1
 
 module use -a $HOMEnos/modulefiles
-module load intel_skylake_512
+#module load intel_skylake_512
+module load intel_x86_64
 
 export I_MPI_DEBUG=1
 #export I_MPI_FABRICS=shm    # This is needed for Intel MPI 2019+ with Docker
