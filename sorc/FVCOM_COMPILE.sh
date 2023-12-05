@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+# set -x
 
 nosofs_ver=v3.5.0
 
@@ -10,7 +10,8 @@ module purge
 . /save/environments/spack/share/spack/setup-env.sh
 
 module use $HOMEnos/modulefiles
-module load intel_skylake_512
+#module load intel_skylake_512
+module load intel_x86_64
 
 export PATH=$PATH:/usrx/bin
 

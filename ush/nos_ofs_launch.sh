@@ -165,7 +165,8 @@ fi
 
 
 export pgm=${FIXofs}/$STA_OUT_CTL"_copy"
-. prep_step
+
+# . prep_step
 
 if [ ! -s ${FIXofs}/$STA_OUT_CTL ]; then
   echo '${FIXofs}/$STA_OUT_CTL is not found'
@@ -574,7 +575,9 @@ if [ "$runtype" = "prep" ] || [ "$runtype" = "PREP" ]; then
       echo $nvrt >> Fortran_read_restart.ctl
     fi
     export pgm=nos_ofs_read_restart
-. prep_step
+
+# . prep_step
+
     if [ ${OCEAN_MODEL} == "ROMS" -o ${OCEAN_MODEL} == "roms" ]; then 
       $EXECnos/nos_ofs_read_restart < Fortran_read_restart.ctl > Fortran_read_restart.log
       export err=$?

@@ -54,10 +54,15 @@ module load netcdf-fortran/4.6.1-intel-2021.9.0-meeveoj
 #     NETCDF_INCDIR ?= $(shell $(NF_CONFIG) --prefix)/include
 setenv NETCDF "/mnt/efs/fs1/save/environments/spack/opt/spack/linux-rhel8-x86_64/intel-2021.9.0/netcdf-fortran-4.6.1-meeveojv5q6onmj6kitfb2mwfqscavn6"
 
-export LD_LIBRARY_PATH=$NETCDF/lib:$LD_LIBRARY_PATH
+setenv NETCDFC "/mnt/efs/fs1/save/environments/spack/opt/spack/linux-rhel8-x86_64/intel-2021.9.0/netcdf-c-4.9.2-vznmeikm7cp5ht2ktorgf2ehhzgvqqel"
+
+# setenv LD_LIBRARY_PATH "$env(NETCDF)/lib:$LD_LIBRARY_PATH
+prepend-path LD_LIBRARY_PATH "$env(NETCDF)/lib"
+prepend-path LD_LIBRARY_PATH "$env(NETCDFC)/lib"
 
 #PT test setenv NETCDF_INC "-I$env(NETCDF)/include"
 #PT test setenv NETCDF_LIB "-L$env(NETCDF)/lib -lnetcdf -lnetcdff"
 setenv NETCDF_INCDIR  "$env(NETCDF)/include"
 
 setenv JASPER_LIB "-L/lib64 -ljasper"
+

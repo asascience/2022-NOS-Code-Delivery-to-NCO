@@ -1,4 +1,5 @@
 #!/bin/bash
+# set -x
 
 export nosofs_ver=3.5.0
 HOMEnos=$(dirname $PWD)
