@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 
 if [ $# -ne 2 ] ; then
   echo "Usage: $0 YYYYMMDD HH"
@@ -33,15 +33,14 @@ date
 
 . /usr/share/Modules/init/bash
 
-module purge
 export I_MPI_OFI_LIBRARY_INTERNAL=1
 
-set +x
 module use -a $HOMEnos/modulefiles
-#echo $HOMEnos/modulefiles
 
 #module load intel_skylake_512
 module load intel_x86_64
+
+module list
 
 export I_MPI_DEBUG=1
 #export I_MPI_FABRICS=shm    # This is needed for Intel MPI 2019+ with Docker
@@ -143,7 +142,6 @@ export EXECnos=${EXECnos:-${HOMEnos}/exec}
 export FIXnos=${FIXnos:-${HOMEnos}/fix/shared}
 export FIXofs=${FIXofs:-${HOMEnos}/fix/${OFS}}
 
-#export FIXofs="/save/ioos/patrick.tripp/nosofs-NCO/fix/$OFS"
 
 export PARMnos=${PARMnos:-${HOMEnos}/parm}
 export USHnos=${USHnos:-${HOMEnos}/ush}
