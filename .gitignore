@@ -3,6 +3,5 @@
 **/*.mod
 **/*.f90
 lib/
-fix/
 exec/
 sorc/ROMS.fd/Build_roms
