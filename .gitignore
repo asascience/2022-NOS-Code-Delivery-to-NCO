@@ -4,4 +4,6 @@
 **/*.f90
 lib/
 exec/
+fix/
+!fix/get_fixfiles_s3.sh
 sorc/ROMS.fd/Build_roms
