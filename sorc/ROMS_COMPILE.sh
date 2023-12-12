@@ -1,15 +1,18 @@
 #!/bin/bash
+# set -x
 
 export nosofs_ver=3.5.0
 HOMEnos=$(dirname $PWD)
 export HOMEnos=${HOMEnos:-${NWROOT:?}/nosofs.${nosofs_ver:?}}
 
 module purge
-#scl enable devtoolset-8 bash
+source /opt/rh/gcc-toolset-11/enable
+
 . /save/environments/spack/share/spack/setup-env.sh
 
 module use $HOMEnos/modulefiles
-module load intel_skylake_512
+#module load intel_skylake_512
+module load intel_x86_64
 
 module list 2>&1
 
@@ -33,8 +36,7 @@ cd $SORCnos
 buildprep=no
 
 models='cbofs ciofs dbofs gomofs tbofs wcofs wcofs_free'
-#models=''
-
+models='cbofs'
 
 # Needed in post
 cd $SORCnos/nos_ofs_rename.fd

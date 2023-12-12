@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 ulimit -c unlimited
+ulimit -s unlimited
 
 # This was created to launch a job via Python
 # The Python scripts create the cluster on-demand 

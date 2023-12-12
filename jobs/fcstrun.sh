@@ -1,7 +1,5 @@
 #!/bin/bash
-set -x
-ulimit -s unlimited
-ulimit -c unlimited
+#set -x
 
 if [ $# -ne 2 ] ; then
   echo "Usage: $0 YYYYMMDD HH"
@@ -14,8 +12,8 @@ HH=$2
 export HOMEnos=$(dirname $PWD)
 
 # YES will not delete /ptmp run directory, useful when debugging
-#export KEEPDATA=NO
-export KEEPDATA=YES
+export KEEPDATA=NO
+#export KEEPDATA=YES
 
 ########################################
 # NOS_OFS_PREP 
@@ -35,11 +33,14 @@ date
 
 . /usr/share/Modules/init/bash
 
-module purge
 export I_MPI_OFI_LIBRARY_INTERNAL=1
 
 module use -a $HOMEnos/modulefiles
-module load intel_skylake_512
+
+#module load intel_skylake_512
+module load intel_x86_64
+
+module list
 
 export I_MPI_DEBUG=1
 #export I_MPI_FABRICS=shm    # This is needed for Intel MPI 2019+ with Docker
@@ -66,7 +67,7 @@ if [[ "$OFS" == "ngofs2" ]] ; then
   export MPIOPTS=${MPIOPTS:-"-np $NPP -ppn $PPN -bind-to core"}
 fi
 
-export MPIOPTS=${MPIOPTS:-"-np $NPP -ppn $PPN"}
+export MPIOPTS=${MPIOPTS:-"-np $NPP -ppn $PPN "}
 
 NOWCAST=NO      # Run the nowcast?
 FORECAST=YES    # Run the forecast?
@@ -141,7 +142,6 @@ export EXECnos=${EXECnos:-${HOMEnos}/exec}
 export FIXnos=${FIXnos:-${HOMEnos}/fix/shared}
 export FIXofs=${FIXofs:-${HOMEnos}/fix/${OFS}}
 
-#export FIXofs="/save/ioos/patrick.tripp/nosofs-NCO/fix/$OFS"
 
 export PARMnos=${PARMnos:-${HOMEnos}/parm}
 export USHnos=${USHnos:-${HOMEnos}/ush}
@@ -174,7 +174,6 @@ echo "LAUNCH ${RUN} NOWCAST/FORECAST SIMULATIONS at time: " `date ` >> $cormslog
 echo "NOWCAST/FORECAST CYCLE IS: " $time_nowcastend >> $cormslogfile
 echo "Start ${RUN} " >> $cormslogfile
 set -x
-
 env  
 
 result=0
