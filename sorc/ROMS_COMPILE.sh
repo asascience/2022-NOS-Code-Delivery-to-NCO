@@ -36,7 +36,7 @@ cd $SORCnos
 buildprep=no
 
 models='cbofs ciofs dbofs gomofs tbofs wcofs wcofs_free'
-models='cbofs'
+#models='wcofs'
 
 # Needed in post
 cd $SORCnos/nos_ofs_rename.fd

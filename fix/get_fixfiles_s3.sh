@@ -24,7 +24,7 @@ wcofs
 "
 
 # Optionally only download some
-#fixdirs='shared cbofs'
+#fixdirs='shared wcofs'
 
 bucket=ioos-cloud-sandbox
 version="v3.5.4"
