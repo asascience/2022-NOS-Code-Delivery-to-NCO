@@ -1,0 +1,23 @@
+
+This folder: nosofs with attempted cbofs run
+
+Waiting for updated source and scripts from Aijun.
+.ctl files and other scripts need to be updated to use new naming scheme,
+nos.cbofs versus nosofs.cbofs versus just cbofs. input file changes
+
+ROMS.fd contains 
+
+Will pull from nwprod if AJ takes much longer, waiting for a gitHub link. No github repo found on my own search.
+
+sorc/ROMS.eccofs copied from save/eccofs test package provided. This is a myroms github ROMS repo.
+
+It was built using ROMS_COMPILE sh script:
+ROMS_COMPILE.sh:  if [[ $model == "eccofs" ]]; then
+ROMS_COMPILE.sh:    cd $SORCnos/ROMS.eccofs
+
+eccofs has not been added to the NCO run scripts yet, waiting for nosofs update.
+Just focus on the eccofs testcase and workflow for now.
+
+exec/eccofs_roms_mpi
+
+

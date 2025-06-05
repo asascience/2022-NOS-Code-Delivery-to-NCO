@@ -560,6 +560,10 @@ dashL= $(empty) -L
 # Do not set static for use with visit!
 #         VISOPT   = -Wl,--export-dynamic
 #         LDFLAGS  =  $(VISITLIBPATH)
+
+
+
+
 #--------------------------------------------------------------------------
 #  Intel OneAPI/MPI Compiler Definitions
 #--------------------------------------------------------------------------
@@ -571,6 +575,11 @@ dashL= $(empty) -L
           CPP      = $(COMP_CPP)
           CXX      = $(COMP_CC)
           OPT      = -O3 -fp-model precise  -ftz -fast-transcendentals -no-prec-div
+          # might need this -march=core-avx2 -fp-model precise
+
+
+
+
 #--------------------------------------------------------------------------
 #  gfortran defs 
 #--------------------------------------------------------------------------

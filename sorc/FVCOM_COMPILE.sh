@@ -157,6 +157,7 @@ rm -f *.o
 cd $SORCnos/FVCOM.fd/FVCOM_source
 
 models='leofs lmhofs loofs lsofs ngofs2 sfbofs'
+models='leofs'
 
 for model in $models
 do

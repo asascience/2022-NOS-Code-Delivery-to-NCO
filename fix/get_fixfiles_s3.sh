@@ -6,6 +6,7 @@
 
 # Call this from the nosofs-NCO/fix folder
 
+
 fixdirs="
 shared
 cbofs

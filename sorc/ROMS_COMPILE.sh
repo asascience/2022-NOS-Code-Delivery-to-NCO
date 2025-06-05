@@ -37,6 +37,7 @@ buildprep=no
 
 models='cbofs ciofs dbofs gomofs tbofs wcofs wcofs_free'
 #models='wcofs'
+models='eccofs'
 
 # Needed in post
 cd $SORCnos/nos_ofs_rename.fd
@@ -45,7 +46,11 @@ gmake -f makefile
 
 for model in $models
 do
-  cd $SORCnos/ROMS.fd
+  if [[ $model == "eccofs" ]]; then
+    cd $SORCnos/ROMS.eccofs
+  else
+    cd $SORCnos/ROMS.fd
+  fi
   gmake clean
   ./build_${model}.sh 
   if [ -s ${model}_roms_mpi ]; then

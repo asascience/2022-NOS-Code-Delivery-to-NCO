@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+set -x
 
 if [ $# -ne 2 ] ; then
   echo "Usage: $0 YYYYMMDD HH"
@@ -13,7 +13,7 @@ export HOMEnos=$(dirname $PWD)
 
 # YES will not delete /ptmp run directory, useful when debugging
 export KEEPDATA=NO
-#export KEEPDATA=YES
+export KEEPDATA=YES
 
 ########################################
 # NOS_OFS_PREP 
@@ -99,7 +99,7 @@ export jlogfile=$DATA/jlogfile.$$
 ###################################
 # Specify NET and RUN Name and model
 ####################################
-export NET=${NET:-nos}
+export NET=${NET:-nosofs}
 export RUN=${RUN:-$OFS}
 
 ###############################################################
@@ -151,7 +151,8 @@ export SCRIPTSnos=${SCRIPTSnos:-${HOMEnos}/scripts}
 ##############################################
 # Define COM directories
 ##############################################
-export COMIN=${COMIN:-${COMROOT}/${NET}/${RUN}.${PDY}${HH}}          # input directory
+#export COMIN=${COMIN:-${COMROOT}/${NET}/${RUN}.${PDY}${HH}}          # input directory
+export COMIN=${COMIN:-${COMROOT}/${NET}/${RUN}.${PDY}}          # input directory
 export COMOUTroot=${COMOUTroot:-${COMROOT}/${NET}}              # output directory
 export COMOUT=${COMOUT:-${COMOUTroot}/${RUN}.${PDY}${HH}}                     # output directory
 
