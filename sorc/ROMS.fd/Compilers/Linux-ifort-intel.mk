@@ -38,6 +38,10 @@
 #
                FC := mpif90
 # might need this        # FFLAGS := -march=core-avx2 -fp-model precise
+# # LiveOcean build uses it, I think it failed if I didn't
+# ifdef NO_AVX512
+#           FFLAGS += -march=core-avx2
+#endif
            FFLAGS :=  -fp-model precise
 #           FFLAGS += -heap-arrays
        FIXEDFLAGS := -nofree

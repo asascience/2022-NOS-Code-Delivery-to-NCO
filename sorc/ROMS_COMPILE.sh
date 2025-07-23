@@ -35,7 +35,7 @@ cd $SORCnos
 
 buildprep=no
 
-models='cbofs ciofs dbofs gomofs tbofs wcofs wcofs_free'
+#models='cbofs ciofs dbofs gomofs tbofs wcofs wcofs_free'
 #models='wcofs'
 models='eccofs'
 
